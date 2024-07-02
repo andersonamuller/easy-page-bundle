@@ -38,7 +38,7 @@ class PageLoader extends Loader
      *
      * @throws \Exception If something went wrong
      */
-    public function load($resource, string $type = null)
+    public function load($resource, string $type = null): mixed
     {
         if ($this->isLoaded) {
             throw new \RuntimeException('Do not add the "easy_page" loader twice');
